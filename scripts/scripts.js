@@ -14,3 +14,57 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+function initSwiper() {
+  if (window.innerWidth <= 1440) {
+    var swiper = new Swiper(".servicesSwiper", {
+      slidesPerView: 3,
+      spaceBetween: 15,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    var swiper = new Swiper(".blogSwiper", {
+      slidesPerView: 2,
+      spaceBetween: 15,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  }
+  if (window.innerWidth <= 1100) {
+    var swiper = new Swiper(".servicesSwiper", {
+      slidesPerView: 2,
+      spaceBetween: 15,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  }
+  if (window.innerWidth <= 768) {
+    var swiper = new Swiper(".blogSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    var swiper = new Swiper(".servicesSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+  }
+}
+
+initSwiper();
+
+window.addEventListener("resize", initSwiper);

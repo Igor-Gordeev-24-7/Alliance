@@ -5,19 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alliance</title>
     <link rel="stylesheet" href="./styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- HEADER -->
     <header class="header">
       <div class="header__wrapper wrapper">
         <a href="#" class="header__logo">
-          <svg width="193.00000" height="51.000000">
-            <use xlink:href="./accets/icons/logo.svg#logo-svg"></use>
-          </svg>
+            <img class="header__logo-img" src="./accets/icons/logo.svg"  alt="logo-img">
         </a>
 
         <nav class="header__menu">
@@ -85,71 +80,73 @@
               From cross-country moves to anywhere in between, distance moving
               can be simple. We’ll help you get there
             </p>
+          </div>
 
-            <div class="services__items">
-              <div class="services__item">
-                <img src="./accets/icons/item-icon-1.svg" alt="item-icon" />
-                <span class="services__item-heading">Residential Moving</span>
-                <p class="services__item-text">
-                  Managing every detail, big or small, to help you have the
-                  smoothest move possible. We’ll help you arrive home
-                </p>
-              </div>
-              <div class="services__item">
-                <img src="./accets/icons/item-icon-2.svg" alt="item-icon" />
-                <span class="services__item-heading"> Commerical Moving</span>
-                <p class="services__item-text">
-                  CFast & efficient moving for businesses, while ensuring
-                  careful handling of equipment. We’ll support your business
-                  venture
-                </p>
-              </div>
-              <div class="services__item">
-                <img src="./accets/icons/item-icon-3.svg" alt="item-icon" />
-                <span class="services__item-heading"
-                  >Packing and Unpacking services</span
-                >
-                <p class="services__item-text">
-                  Careful packing, crating, wrapping, and unpacking so you won’t
-                  have to worry. We’ll organize the moving parts
-                </p>
-              </div>
-              <div class="services__item">
-                <img src="./accets/icons/item-icon-4.svg" alt="item-icon" />
-                <span class="services__item-heading"
-                  >Furniture disassembly serviceg</span
-                >
-                <p class="services__item-text">
-                  Servicing your appliances, electronics, over-sized furniture,
-                  and more. We’ll care for your valuables
-                </p>
-              </div>
-              <div class="services__item">
-                <img src="./accets/icons/item-icon-5.svg" alt="item-icon" />
-                <span class="services__item-heading">Long-Distance Movers</span>
-                <p class="services__item-text">
-                  From cross-country moves to anywhere in between, distance
-                  moving can be simple. We’ll help you get there
-                </p>
-              </div>
-              <div class="services__item">
-                <img src="./accets/icons/item-icon-5.svg" alt="item-icon" />
-                <span class="services__item-heading">Long-Distance Movers</span>
-                <p class="services__item-text">
-                  From cross-country moves to anywhere in between, distance
-                  moving can be simple. We’ll help you get there
-                </p>
+          <div class="services__wrapper wrapper">
+            <div class="slider services__items">
+              <div class="swiper servicesSwiper">
+                <div class="swiper-wrapper services__items-wrapper">
+
+                  <div class="services__item swiper-slide">
+                    <img src="./accets/icons/item-icon-1.svg" alt="item-icon" />
+                    <span class="services__item-heading">Residential Moving</span>
+                    <p class="services__item-text">
+                      Managing every detail, big or small, to help you have the
+                      smoothest move possible. We’ll help you arrive home
+                    </p>
+                  </div>
+                  <div class="services__item swiper-slide">
+                    <img src="./accets/icons/item-icon-2.svg" alt="item-icon" />
+                    <span class="services__item-heading"> Commerical Moving</span>
+                    <p class="services__item-text">
+                      CFast & efficient moving for businesses, while ensuring
+                      careful handling of equipment. We’ll support your business
+                      venture
+                    </p>
+                  </div>
+                  <div class="services__item swiper-slide">
+                    <img src="./accets/icons/item-icon-3.svg" alt="item-icon" />
+                    <span class="services__item-heading"
+                      >Packing and Unpacking services</span
+                    >
+                    <p class="services__item-text">
+                      Careful packing, crating, wrapping, and unpacking so you won’t
+                      have to worry. We’ll organize the moving parts
+                    </p>
+                  </div>
+                  <div class="services__item swiper-slide">
+                    <img src="./accets/icons/item-icon-4.svg" alt="item-icon" />
+                    <span class="services__item-heading"
+                      >Furniture disassembly serviceg</span
+                    >
+                    <p class="services__item-text">
+                      Servicing your appliances, electronics, over-sized furniture,
+                      and more. We’ll care for your valuables
+                    </p>
+                  </div>
+                  <div class="services__item swiper-slide">
+                    <img src="./accets/icons/item-icon-5.svg" alt="item-icon" />
+                    <span class="services__item-heading">Long-Distance Movers</span>
+                    <p class="services__item-text">
+                      From cross-country moves to anywhere in between, distance
+                      moving can be simple. We’ll help you get there
+                    </p>
+                  </div>
+                  <div class="services__item swiper-slide">
+                    <img src="./accets/icons/item-icon-5.svg" alt="item-icon" />
+                    <span class="services__item-heading">Long-Distance Movers</span>
+                    <p class="services__item-text">
+                      From cross-country moves to anywhere in between, distance
+                      moving can be simple. We’ll help you get there
+                    </p>
+                  </div>
+
+                  </div>
+                  <div class="swiper-pagination services__swiper-pagination"></div>
+                </div>
+                
               </div>
             </div>
-            <!-- <div class="services__slider-btns">
-              <button class="services__slider-btn services__slider-btn-prev">
-                prev
-              </button>
-              <button class="services__slider-btn services__slider-btn-next">
-                next
-              </button>
-            </div>
-            <div class="services__pagination"></div> -->
           </div>
         </div>
       </section>
@@ -244,57 +241,69 @@
             </div>
             <button class="blog__top-btn">View All</button>
           </div>
-          <div class="blog__cards">
-            <div class="blog__card">
-              <div class="blog__card-top">
-                <img
-                  src="./accets/img/soap.png" 
-                  alt="card-img"
-                  class="blog__card-img"
-                />
+
+          <div class="slider blog__cards">
+            <div id="element" class="swiper blogSwiper">
+              <div class="swiper-wrapper blog__card-wrapper">
+                <div class="blog__card swiper-slide">
+                  <div class="blog__card-top">
+                    <img
+                      src="./accets/img/soap.png"
+                      alt="card-img"
+                      class="blog__card-img"
+                    />
+                  </div>
+                  <div class="blog__card-content">
+                    <span class="blog__card-span">December 16, 21</span>
+                    <span class="blog__card-heading"
+                      >How to move during COVID</span
+                    >
+                    <p class="blog__card-description">
+                      It depends on the size of your room It depends on the size
+                      of your room It depends on the size of your room
+                    </p>
+                  </div>
+                </div>
+                <div class="blog__card swiper-slide">
+                  <div class="blog__card-top">
+                    <img
+                      src="./accets/img/soap.png"
+                      alt="card-img"
+                      class="blog__card-img"
+                    />
+                  </div>
+                  <div class="blog__card-content">
+                    <span class="blog__card-span">December 16, 21</span>
+                    <span class="blog__card-heading"
+                      >How to move during COVID</span
+                    >
+                    <p class="blog__card-description">
+                      It depends on the size of your room It depends on the size
+                      of your room It depends on the size of your room
+                    </p>
+                  </div>
+                </div>
+                <div class="blog__card swiper-slide">
+                  <div class="blog__card-top">
+                    <img
+                      src="./accets/img/soap.png"
+                      alt="card-img"
+                      class="blog__card-img"
+                    />
+                  </div>
+                  <div class="blog__card-content">
+                    <span class="blog__card-span">December 16, 21</span>
+                    <span class="blog__card-heading"
+                      >How to move during COVID</span
+                    >
+                    <p class="blog__card-description">
+                      It depends on the size of your room It depends on the size
+                      of your room It depends on the size of your room
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="blog__card-content">
-                <span class="blog__card-span">December 16, 21</span>
-                <span class="blog__card-heading">How to move during COVID</span>
-                <p class="blog__card-description">
-                  It depends on the size of your room It depends on the size of
-                  your room It depends on the size of your room
-                </p>
-              </div>
-            </div>
-            <div class="blog__card">
-              <div class="blog__card-top">
-                <img
-                  src="./accets/img/soap.png"
-                  alt="card-img"
-                  class="blog__card-img"
-                />
-              </div>
-              <div class="blog__card-content">
-                <span class="blog__card-span">December 16, 21</span>
-                <span class="blog__card-heading">How to move during COVID</span>
-                <p class="blog__card-description">
-                  It depends on the size of your room It depends on the size of
-                  your room It depends on the size of your room
-                </p>
-              </div>
-            </div>
-            <div class="blog__card">
-              <div class="blog__card-top">
-                <img
-                  src="./accets/img/soap.png"
-                  alt="card-img"
-                  class="blog__card-img"
-                />
-              </div>
-              <div class="blog__card-content">
-                <span class="blog__card-span">December 16, 21</span>
-                <span class="blog__card-heading">How to move during COVID</span>
-                <p class="blog__card-description">
-                  It depends on the size of your room It depends on the size of
-                  your room It depends on the size of your room
-                </p>
-              </div>
+              <div class="swiper-pagination blog__swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -304,18 +313,17 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer__wrapper wrapper">
-        <span class="footer__copyright"
-          >© ALLIANCE MOVING AND STORAGE. ALL RIGHTS RESERVED</span
-        >
+        <a href="#" class="footer__copyright"
+          >© ALLIANCE MOVING AND STORAGE. ALL RIGHTS RESERVED</a>
 
         <div class="footer__box">
-          <span class="footer__span"
-            >PRIVACY POLICY | CONSUMER INFORMATION</span
+          <a href="#" class="footer__span"
+            >PRIVACY POLICY | CONSUMER INFORMATION</
           >
           <span class="footer__span">ITLL MC: 214854 - USDOT: 2882675</span>
         </div>
 
-        <span class="footer__span">Made by Comrade</span>
+        <a href="#" class="footer__span">Made by Comrade</a>
       </div>
     </footer>
 
